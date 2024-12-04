@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Coiny&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="./main.css" />
+    <title>Movies</title>
+  </head>
+  <body>
+    <section class="section">
+      <div class="container">
+        <div class="section__left">
+          <ul class="section__left-list list">
+            <li class="list__item">
+              <img
+                src="./images/Movie.png"
+                width="32"
+                height="26"
+                alt=""
+                class="list__item-img"
+              />
+            </li>
+            <li class="list__item-img">
+              <i class="list__item-icon active fa-brands fa-microsoft"></i>
+            </li>
+            <li class="list__item-img">
+              <i class="list__item-icon fa-solid fa-film"></i>
+            </li>
+            <li class="list__item-img">
+              <i
+                class="list__item-icon fa-solid fa-tv"
+                style="font-size: 19px"
+              ></i>
+            </li>
+            <li class="list__item-img">
+              <i class="list__item-icon fa-solid fa-bookmark"></i>
+            </li>
+          </ul>
+          <img
+            class="section__left-img"
+            width="40"
+            height="40"
+            src="./images/Oval.png"
+            alt=""
+          />
+        </div>
+        <div class="swipper">
+          <div class="search-box">
+            <i
+              class="fa-solid fa-magnifying-glass"
+              style="color: #fff; padding-right: 10px"
+            ></i>
+            <input
+              type="text"
+              class="input"
+              id="searchInput"
+              placeholder="Search for movies or TV series"
+            />
+          </div>
+          <h3 class="swipper-title">Trending</h3>
+          <div class="corusel-item">
+            <swiper-container
+              class="mySwiper"
+              id="swipperContainer"
+              space-between="10"
+              slides-per-view="2.5"
+            >
+            </swiper-container>
+          </div>
+          <h3 class="trend-title">Recommended for you</h3>
+          <div class="recommended-container" id="rec"></div>
+        </div>
+      </div>
+    </section>
+    <script src="./movies.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <script src="mian.js"></script>
+  </body>
+</html>
